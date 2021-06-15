@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Home Page</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body id = "body">
+<header class = "header">
+  <img class = "himage" src="https://lh3.googleusercontent.com/O63sS3QyHOVBHYM5k8sbuwxvANM2lV2pkLmCuou3uAtV5YTlqMcRURBGURHtX0MPUNYgcFiUr_Thf-lu3iNVTd5DZvoV7l3rmjezZUcZuBrAqo4_vePk_axViCpfPZ6eJNPiqCyE9Q=w280-h280-p-k" width = "10%"/>
+  <div>The Dragon</div>
+</header>
+<div class = "topnav" id = "p1">
+  <a href = ""> Home</a>
+  <a href = ""> Image Filter</a>
+  <a href = ""> Paint Canvas</a>
+  <a href = ""> Steganography</a>
+  <a href = "" style = "float:right"> Contact Us</a>
+  <a href = "" style = "float:right"> About the Creator</a>
+  <a><div class = "dropdown">
+    <input type  = "button" value = "Change Page Theme" class = "dropbtn" >
+    <div class = "dropdown-content">
+    <div class="row">
+      <div class="column">
+        <ul type = "none">
+          <li><input id = "t1" class = "theme" type = "button" onclick = "dark()" value = "Dark"/></li>
+          <li><input id = "t2" class = "theme" type = "button" onclick = "light()" value = "LIght"/></li>
+          <li><input id = "t3" class = "theme" type = "button" onclick = "roseanna()" value = "Roseanna"/></li>
+          <li><input id = "t4" class = "theme" type = "button" onclick = "sexyblue()" value = "Sexy Blue"/></li>
+          <li><input id = "t5" class = "theme" type = "button" onclick = "purplelove()" value = "Purple Love"/></li>
+        </ul>
+      </div>
+      <div class="column">
+        <ul type = "none" >
+          <li><input id = "t6" class = "theme" type = "button" onclick = "shadesofgrey()" value = "Shades of Grey"/></li>
+          <li><input id = "t7" class = "theme" type = "button" onclick = "lostmemory()" value = "Lost Memory"/></li>
+          <li><input id = "t8" class = "theme" type = "button" onclick = "lush()" value = "Lush"/></li>
+          <li><input id = "t9" class = "theme" type = "button" onclick = "greenbeach()" value = "Green Beach"/></li>
+          <li><input id = "t10" class = "theme" type = "button" onclick = "frost()" value = "Frost"/></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    </div></a>
+</div>
+<div class = "row">
+  <div class = "column middle">
+    <div style = "font-size:32px; padding: 15px 0px;"><b>About the Website</b></div>
+    <p style = "font-size:18px">
+      This page was dessigned as a project for different puposes and the creator is Prateek Kumar Pal. It is made using HTML as the for the primary layout. CSS for the styling and effect with SCSS as the preprocessor. JavaScript was used for algorithms and related functions. The webpages and the project itself was made with <a href = "https://codepen.io" style = "background-image: linear-gradient(to right,#ffed00, #ff0000); color: black;"> CodePen </a>. To learn more about the creator go to the '<b>About the Creator</b>' page. You are invited to take a tour of the website and leave a feedback on the '<b>Contact Us</b>' page.
+    </p> 
+    <br><div style = "font-size:25px; padding: 10px 0px;"><b>Functions of the Website</b></div><br>
+    <p>
+    <ul style = "font-size:18px;">
+      <li><b>Home</b>: This button on the dashboard brings you back to the home page of the website.</li><br>
+      <li><b>Image Filters</b>: These filters are made with JavaScript and can be used to edit your images. To use the filter function just click on the '<b>Choose File</b>' button and after selecting the image you will see it getting uploaded you can then choose any filter of your choice to edit the image. You can also download the edited pic right-clicking on the Output pic and saving the image or using a similar method in mobiles. </li><br>
+      <li><b>Paint Canvas</b>: It is a basic painting tool which can be used to write or create anything else you like. Using it is very simple, you can choose the size of the brush, the dimensions of the canvas, the color of you pen and you are ready to draw. To reset the drawing area just click on the 'Clear' button. The functions the webpage are made with JavaScript.</li><br>
+      <li><b>Steganography</b>: It is defined as the art of hiding secret data in a non-secret or normal file. With this page you can perform basic steganography of hiding an picture in another. The only thing you have to consider while using it is that both the pictures should have similar colour tones.</li><br>
+      <li><b>About the Creator</b>: This page provides you with an introduction to the creator and ways to contact him directly.</li><br>
+      <li><b>Contact Us</b>: The page consists of a form which can be filled to provide the creator a feedback on the website. You can also get in touch with the creator this way.</li>
+    </ul>      
+    </p>
+  </div>
+  <div class = "column side">
+    <img class = "sideimg" src = "https://lh3.googleusercontent.com/MnQ4Aj38PC-hK7Y9eL8-LSyr5huoJVtTF_2HBapqx8Ha4nhtqV_mrULGd1in_x3a8LOSP1AUTFlFL3i4YI8Fns17wtE4pMuLe3_MLUfpDl3wlYcqVTvwBoArGFAD4kq5WkftgedNDQ=w960" width = "109%"/>
+  </div>
+  </div>
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
