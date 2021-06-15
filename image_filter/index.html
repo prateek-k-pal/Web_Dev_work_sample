@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - website Image Filter</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<header class = "header">
+  <img class = "himage" src="https://lh3.googleusercontent.com/O63sS3QyHOVBHYM5k8sbuwxvANM2lV2pkLmCuou3uAtV5YTlqMcRURBGURHtX0MPUNYgcFiUr_Thf-lu3iNVTd5DZvoV7l3rmjezZUcZuBrAqo4_vePk_axViCpfPZ6eJNPiqCyE9Q=w280-h280-p-k" width = "10%"/>
+  <div>The Dragon</div>
+</header>
+<div class = "topnav" id = "p1">
+  <a href = ""> Home</a>
+  <a href = ""> Image Filter</a>
+  <a href = ""> Paint Canvas</a>
+  <a href = ""> Steganography</a>
+  <a href = "" style = "float:right"> Contact Us</a>
+  <a href = "" style = "float:right"> About the Creator</a>
+  <a><div class = "dropdown">
+    <input type  = "button" value = "Change Page Theme" class = "dropbtn" >
+    <div class = "dropdown-content">
+    <div class="row1">
+      <div class="column3">
+        <ul type = "none">
+          <li><input id = "t1" class = "theme" type = "button" onclick = "dark()" value = "Dark"/></li>
+          <li><input id = "t2" class = "theme" type = "button" onclick = "light()" value = "LIght"/></li>
+          <li><input id = "t3" class = "theme" type = "button" onclick = "roseanna()" value = "Roseanna"/></li>
+          <li><input id = "t4" class = "theme" type = "button" onclick = "sexyblue()" value = "Sexy Blue"/></li>
+          <li><input id = "t5" class = "theme" type = "button" onclick = "purplelove()" value = "Purple Love"/></li>
+        </ul>
+      </div>
+      <div class="column3">
+        <ul type = "none" >
+          <li><input id = "t6" class = "theme" type = "button" onclick = "shadesofgrey()" value = "Shades of Grey"/></li>
+          <li><input id = "t7" class = "theme" type = "button" onclick = "lostmemory()" value = "Lost Memory"/></li>
+          <li><input id = "t8" class = "theme" type = "button" onclick = "lush()" value = "Lush"/></li>
+          <li><input id = "t9" class = "theme" type = "button" onclick = "greenbeach()" value = "Green Beach"/></li>
+          <li><input id = "t10" class = "theme" type = "button" onclick = "frost()" value = "Frost"/></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    </div></a>
+</div>
+  <script src = "https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+  <body id = "body">
+    <p>
+    <br>
+        
+    <h1 id = "h1" style = "padding: 0px 35px;">Image Filters</h1>
+          <div class = "row">
+<div class = "d1"><div class = "column 2">  Original Image : 
+  <br> <canvas id = "can1"></canvas>
+          </div>
+          <div class = "column 1">
+  Resulting Image :<br>
+    <canvas id = "can2"></canvas>
+        </div>
+        </div>
+    </div> 
+    <br><br>
+    Upload Image : 
+    <input id = "f1" type = "file" onchange = "upload()" multiple = "false" accept = "image/*" />
+    <br><br>
+    <div class = "dropdown">
+    <input type  = "button" value = "Filters" class = "dropbtn1">
+    <div class = "dropdown-content">
+    <!--<div class = "d1">Filters</div> 
+    <div id = "d2">(Before using Rainbow 2 clear output canvas.)</div>-->
+      <div id = "d3">
+        <br>
+      <i>Rainbow 2</i> and <i>Rainbow WIndow</i> can be combined with other filters, to use seperately clear the filter used before them.</div>
+    <br>
+    <div class = "row">
+    <div class = "column">
+      <ul type = "none">
+    <li class = "li1"><input id = "fil1" class = "filter" type = "button" onclick = "grayscale()" value = "Black 'n White"/></li>
+    
+    <li class = "li1"><input id = "fil2" class = "filter" type = "button" onclick = "rainbow1()" value = "Rainbow 1"/></li>
+    
+    <li class = "li1"><input id = "fil2" class = "filter" type = "button" onclick = "rainbow2()" value = "Rainbow 2"/></li>
+    
+    <li class = "li1"><input id = "fil3" class = "filter" type = "button" value = "Cool Blue" onclick = "coolblue1()"/></li>
+        <li class = "li1"><input id = "fil7" class = "filter" type = "button" onclick = "rainbowwindow1()" value = "Rainbow Window" /></li>
+      </ul>
+      </div>
+      <div class = "column">
+    <ul type = "none">
+    <li class = "li1"><input id = "fil4" class = "filter" type = "button" onclick = "hotred()" value = "Hot Red" /></li>
+        
+    <li class = "li1"><input id = "fil5" class = "filter" type = "button" onclick = "sunnyyellow()" value = "Sunny Yellow"/></li>
+        
+    <li class = "li1"><input id = "fil6" class = "filter" type = "button" onclick = "blurimage()" value = "Blur" /></li>
+        
+    <li class = "li1"><input id = "fil6" class = "filter" type = "button" onclick = "window1()" value = "Window" /></li>
+      </ul>
+      </div>
+    </div>
+      </div>
+    </div>
+    <br><br><br><br>
+    <input type = "button" id = "gsb" value = "Clear Input" onclick = "clearCanvas1()"/>
+    <input type = "button" id = "gsb" value = "Clear Output" onclick = "clearCanvas2()"/>
+    <input type = "button" id = "gsb" value = "Clear Both" onclick = "clearCanvas()"/>
+    </p>
+  </body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
