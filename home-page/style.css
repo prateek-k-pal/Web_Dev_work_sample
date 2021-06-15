@@ -1,0 +1,273 @@
+.header {
+  background-image: -webkit-linear-gradient(right bottom, #ffed00, #ff0000, #ffed00);
+  text-align: center;
+  padding: 40px;
+  font-size: 60px;
+  color: black;
+}
+.himage{
+  float: center;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: black;
+}
+
+.topnav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0px 0px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-image: -webkit-linear-gradient( bottom, #b02e0c, #eb4511);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lavenderblush;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.column {
+  float: left;
+  width: 40%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.dark{
+  background:Black;
+  color: white;
+}
+
+#t1{
+  background:Black;
+  color: white;
+}
+
+#t1:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+.light{
+  background: white;
+  color: black;
+}
+
+#t2{
+  background: white;
+  color: black;
+}
+
+#t2:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+.roseanna{
+  background: -webkit-linear-gradient(right, #ffafbd 0%, #ffc3a0 100%);
+  color: black;
+}
+
+#t3{
+  background: -webkit-linear-gradient(right, #ffafbd 0%, #ffc3a0 100%);
+  color: black;
+}
+
+#t3:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+.sexyblue{
+  background: -webkit-linear-gradient(right, #2193b0 0%, #6dd5ed 100%);
+  color: black;
+}
+
+#t4{
+  background: -webkit-linear-gradient(right, #2193b0 0%, #6dd5ed 100%);
+  color: black;
+}
+
+#t4:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+.purplelove {
+  background: -webkit-linear-gradient(right, #cc2b5e 0%, #753a88 100%);
+  color: White;
+}
+
+#t5{
+  background: -webkit-linear-gradient(right, #cc2b5e 0%, #753a88 100%);
+  color: White;
+}
+
+#t5:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+.shadesofgrey{
+  background: -webkit-linear-gradient(right, #bdc3c7 0%, #2c3e50 100%);
+  color: white;
+}
+
+#t6{
+  background: -webkit-linear-gradient(right, #bdc3c7 0%, #2c3e50 100%);
+  color: white;
+}
+
+#t6:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+.lostmemory{
+  background: -webkit-linear-gradient(right, #de6262 0%, #ffb88c 100%);
+  color: black;
+}
+
+#t7{
+  background: -webkit-linear-gradient(right, #de6262 0%, #ffb88c 100%);
+  color: black;
+}
+
+#t7:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+.lush{
+  background: -webkit-linear-gradient(right, #56ab2f 0%, #a8e063 100%);
+  color: white;
+}
+
+#t8{
+  background: -webkit-linear-gradient(right, #56ab2f 0%, #a8e063 100%);
+  color: white;
+}
+
+#t8:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+.greenbeach{
+  background: -webkit-linear-gradient(right, #02aab0 0%, #00cdac 100%);
+  color: white;
+}
+
+#t9{
+  background: -webkit-linear-gradient(right, #02aab0 0%, #00cdac 100%);
+  color: white;
+}
+
+#t9:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+.frost{
+  background: -webkit-linear-gradient(right, #000428 0%, #004e92 100%);
+  color: white;
+}
+
+#t10{
+  background: -webkit-linear-gradient(right, #000428 0%, #004e92 100%);
+  color: white;
+}
+
+#t10:hover {
+  background: #4CAF50;
+  color: white;
+}
+
+.theme{
+  border: none;
+  margin: 5px;
+  padding: 5px 10px;
+}
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 0px;
+}
+
+/* Left and right column */
+.column.side {
+  float: right;
+  width: 22%;
+  padding: 0px 30px;
+}
+.sideimg{
+  background-image: -webkit-linear-gradient(bottom right, #ff0000, #ffed00, #ff0000);
+}
+
+/* Middle column */
+.column.middle {
+  width: 1072px;
+  padding: 0px 20px;
+  text-align: justify;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
